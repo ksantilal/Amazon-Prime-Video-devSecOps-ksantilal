@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     SONARQUBE = 'SonarQube'
-    DOCKER_IMAGE = 'kiranitth/primevideo-app:latest'
+    DOCKER_IMAGE = 'kapil2017/primevideo-app:latest'
     SCANNER_HOME = tool 'sonar-scanner'
   }
 
@@ -17,7 +17,7 @@ pipeline {
       steps {
         git branch: 'master',
             credentialsId: 'github-token',
-            url: 'https://github.com/kirankumaritth/amazon-prime-video-devsecops.git'
+            url: 'https://github.com/ksantilal/Amazon-Prime-Video-devSecOps-ksantilal.git'
       }
     }
 
